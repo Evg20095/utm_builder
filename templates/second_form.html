@@ -1,0 +1,35 @@
+<form method="POST" >
+    <br>
+    {{ form.hidden_tag() }}
+    {{ form.domain.label}}<br>
+    {{ form.domain(size=100) }}
+    <br><br> 
+    <p> <h2>Выберите источник траффика: </h2>
+    {{ form.radio_source }}
+    {{ form.submit }}
+    <br><br>
+    {{ form.source.label}}
+    {{ form.source(size=30) }}
+    </p>
+    <p>
+    {{ form.medium.label}}
+    {{ form.medium(size=30) }}
+    </p>
+    <p>
+    {{ form.campaign.label}}
+    {{ form.campaign(size=30) }}
+    </p>
+    <p>
+    {{ form.content.label}}
+    {{ form.content(size=30) }}
+    </p>
+    <p>
+    {{ form.term.label}}
+    {{ form.term(size=30) }}
+    <br><br><br>
+    <h2>Нажмите, что бы сформировать ссылку: {{ form.submit2 }}</h2>  
+    {{ form.utm_ref.label}}<br>
+    {{ form.utm_ref(size=120) }}
+    <br><br>
+</form>
+

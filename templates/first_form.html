@@ -1,0 +1,38 @@
+<form method="POST" >
+    <br>
+    <br>
+    {{ form.hidden_tag() }}
+    {{ form.domain.label}}<br>
+    {{ form.domain(size=100) }}<br><br> 
+    <p> Выберите источник траффика: 
+    {{ form.radio_sourse }}
+    <p> Нажмите, что бы сформировать ссылку: 
+    <input type="submit" value="Create utm">
+    <br> <br> 
+    <br> 
+    <br> 
+    {{ form.sourse.label}}<br>
+    {{ form.sourse(size=30) }}
+    </p>
+    <p>
+    {{ form.medium.label}}<br>
+    {{ form.medium(size=30) }}
+    </p>
+    <p>
+    {{ form.campaign.label}}<br>
+    {{ form.campaign(size=30) }}
+    </p>
+    <p>
+    {{ form.content.label}}<br>
+    {{ form.content(size=30) }}
+    </p>
+    <p>
+    {{ form.term.label}}<br>
+    {{ form.term(size=30) }}
+    </p>
+    
+    <br><br>
+    {{ form.utm_ref.label}}<br>
+    {{ form.utm_ref(size=100) }}
+    <br><br>
+</form>
